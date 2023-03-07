@@ -15,7 +15,7 @@ and
 
   (make-test-json-web-request \*bad-json\*)  
 
-will trigger a memory failure like the one that follows
+will trigger a memory failure like the one that is detailed in the comments of the lisp code
 
 
 This fails on CentOS Linux,
