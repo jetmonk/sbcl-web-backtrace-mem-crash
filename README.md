@@ -9,11 +9,11 @@ On at least one flavor of linux, starting this file as
 
 and in another sbcl simply loading this file and running
 
-  (make-test-json-web-request *good-json*)  ==> OK response
+  (make-test-json-web-request \*good-json\*)  ==> OK response
   
 and
 
-  (make-test-json-web-request *bad-json*)  
+  (make-test-json-web-request \*bad-json\*)  
 
 will trigger a memory failure like the one that follows
 
