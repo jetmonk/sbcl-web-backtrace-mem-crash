@@ -1,11 +1,15 @@
 # sbcl-web-backtrace-mem-crash
 A demo of a memory corruption that occurs in SBCL when running hunchentoot, and doing a backtrace
 
-
+ **CAVEAT** - $SBCLRC needs to point to a suitable startup file defining package locations
+ 
+ eg: export SBCLRC=$HOME/.sbclrc
 
 On at least one flavor of linux, starting this file as
 
   export RunBugServer=1 ; sbcl --script ./web-server-crash-test.lisp  
+  
+  
 
 and in another sbcl simply loading this file and running
 
