@@ -1,6 +1,8 @@
 # sbcl-web-backtrace-mem-crash
 A demo of a memory corruption that occurs in SBCL when running hunchentoot, and doing a backtrace
 
+## This is not really a bug, but is a consequence of dynamic-extent streams from with-output-to-stream being saved inside an exception, and then ecountering the printer out of scope
+
  **CAVEAT** - $SBCLRC needs to point to a suitable startup file defining package locations
  
  eg: export SBCLRC=$HOME/.sbclrc
